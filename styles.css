@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
 }
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100vw;
     height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
     max-height: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -24,14 +27,74 @@ body {
 }
 
 .sidebar {
+    padding: 4px;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 2fr;
+    row-gap: 5%;
     background-color: paleturquoise;
     grid-row: 1 / -1;
+}
+
+#sidebarHeading {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+}
+
+#sidebarHeading > h3 {
+    justify-self: start;
+}
+
+
+#mainSidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, minmax(25px, 1fr));
+    align-content: start;
+}
+
+#settingsSidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(25px, 0.25fr));
+    align-content: start;
+    justify-content: center;
+}
+
+.mainSidebarItem,
+.settingsSidebarItem {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+}
+
+.sidebar > div > img,
+.mainSidebar > div > img, 
+#settingsSidebar > div > img {
+    width: 25px;
+    height: 25px;
+    max-width: 25px;
+    max-height: 25px;
+}
+
+
+#settingsSidebar > div > strong,
+.mainSidebar > div > strong {
+    justify-self: start;
 }
 
 .header {
     grid-column: 2 / -1;
     grid-row: 1 / 2;
     background-color: palegreen;
+}
+
+.main {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    background-color: salmon;
 }
