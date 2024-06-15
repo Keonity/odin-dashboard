@@ -88,10 +88,54 @@ body {
 }
 
 .header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
     background-color: palegreen;
 }
+
+#bottomHeader img,
+#topHeader img {
+    width: 25px;
+    height: 25px;
+    max-width: 25px;
+    max-height: 25px;
+}
+
+#topHeader {
+    padding: 16px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+}
+
+#searchbar {
+    border-radius: 45px;
+    margin-left: -3vw;
+    background-color: lightgray;
+    width: 60%;
+    height: 30%;
+}
+
+#bottomHeader {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+#bottomHeader img {
+    justify-self: center;
+}
+
+#bottomHeader input {
+    height: 75%;
+    width: 75%;
+    border-radius: 45px;
+}
+
 
 .main {
     grid-column: 2 / -1;
