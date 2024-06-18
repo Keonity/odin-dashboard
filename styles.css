@@ -126,7 +126,6 @@ body {
     height: 25px;
     max-width: 25px;
     max-height: 25px;
-    content: url('./images/beehive-outline.svg');
 }
 
 
@@ -151,7 +150,6 @@ body {
     height: 25px;
     max-width: 25px;
     max-height: 25px;
-    content: url('./images/beehive-outline.svg');
 }
 
 #topHeader {
@@ -164,10 +162,10 @@ body {
 
 #searchbar {
     border-radius: 45px;
-    margin-left: -3vw;
-    background-color: lightgray;
+    margin-left: -4vw;
+    background-color: rgb(233, 232, 232);
     width: 60%;
-    height: 30%;
+    height: 40%;
 }
 
 #bottomHeader {
@@ -303,4 +301,94 @@ body {
 
 .bio {
     font-size: 75%;
+}
+
+#sidebarHeadingImg {
+    content: url('./images/coffee.svg');
+}
+
+.mainSidebarItem:nth-child(1) img {
+    content: url('./images/beehive-outline.svg');
+}
+
+.mainSidebarItem:nth-child(2) img {
+    content: url('./images/bee.svg');
+}
+
+.mainSidebarItem:nth-child(3) img {
+    content: url('./images/message-processing-outline.svg');
+}
+
+.mainSidebarItem:nth-child(4) img {
+    content: url('./images/history.svg');
+}
+
+.mainSidebarItem:nth-child(5) img {
+    content: url('./images/account-hard-hat-outline.svg');
+}
+
+.mainSidebarItem:nth-child(6) img {
+    content: url('./images/account-group-outline.svg');
+}
+
+.settingsSidebarItem:nth-child(1) img {
+    content: url('./images/cog-outline.svg');
+}
+
+.settingsSidebarItem:nth-child(2) img {
+    content: url('./images/face-agent.svg');
+}
+
+.settingsSidebarItem:nth-child(3) img {
+    content: url('./images/lock-outline.svg');
+}
+
+#topHeader img:nth-child(1) {
+    content: url('./images/magnify.svg');
+}
+
+#topHeader img:nth-child(3) {
+    content: url('./images/bell-alert-outline.svg');
+}
+
+#topHeader img:nth-child(4) {
+    content: url('./images/ghost-outline.svg');
+}
+
+#bottomHeader img {
+    content: url('./images/ghost-outline.svg');
+    width: 100%;
+    height: 100%;
+}
+
+.projectIcons img:nth-child(1) {
+    content: url('./images/star-plus-outline.svg');
+}
+
+.projectIcons img:nth-child(2) {
+    content: url('./images/eye-plus-outline.svg');
+}
+
+.projectIcons img:nth-child(3) {
+    content: url('./images/share-variant-outline.svg');
+}
+
+.trendingCard:nth-child(1) img {
+    content: url('./images/weather-hurricane-outline.svg');
+}
+
+.trendingCard:nth-child(2) img {
+    content: url('./images/flower-tulip-outline.svg');
+}
+
+.trendingCard:nth-child(3) img {
+    content: url('./images/mushroom-outline.svg');
+}
+
+.trendingCard:nth-child(4) img {
+    content: url('./images/food-apple-outline.svg');
+}
+
+.adminPost {
+    color: #b11623;
 }
